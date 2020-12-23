@@ -29,12 +29,12 @@ class ContactDetails extends Component {
 
         const user = userService.getCurrUser()
         console.log("🚀 ~ file: ContactDetails.getmovemenetsFromCurrUser ~ user", user)
-        let movements = JSON.parse(JSON.stringify(user.moves.filter(move => move.to === this.state.contact._id))) || []
+        let movements = JSON.parse(JSON.stringify(user.moves.filter(move => move.toId === this.state.contact._id))) || []
 
-        movements = movements.map(move => {
-            move.to = this.state.contact.name
-            return move
-        })
+        // movements = movements.map(move => {
+        //     move.toName = this.state.contact.name
+        //     return move
+        // })
         this.setState({ movements }, () => {
             console.log(this.state.movements);
         })
@@ -88,7 +88,7 @@ class ContactDetails extends Component {
                     </h4>
                 </div>
                 <TransferFunds contact={this.state.contact} onUpdateUserMove={(move) => { this.recoredMove(move) }} />
-                <Movement movements={this.state.movements} directionFrom={true} />
+                <Movement movements={this.state.movements || []} directionFrom={true} />
 
             </main>
         )

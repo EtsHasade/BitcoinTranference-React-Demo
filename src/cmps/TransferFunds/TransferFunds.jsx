@@ -11,7 +11,8 @@ const MoveBitcoin = ({ contact, onUpdateUserMove }) => {
         <form className="transfer-form flex wrap center" onSubmit={(ev) => {
             ev.preventDefault()
             onUpdateUserMove({
-                    to: contact._id,
+                    toId: contact._id,
+                    toName: contact.name,
                     amount: amount,
                     time: Date.now()
                 })

@@ -4,7 +4,7 @@ var gCurrUser = (localStorage.gCurrUser)? JSON.parse(localStorage.gCurrUser) :
 {
     name: "Gilad Galili",
     coins: 100,
-    moves: [{to: '5a566402abce24c6bfe4699d', amount: 25.2, time: 1608650668843}]
+    moves: [{toId: '5a566402abce24c6bfe4699d',toName: 'Dominique Soto' , amount: 25.2, time: 1608650668843}]
 }
 
 _saveUserToLocalStorage()
