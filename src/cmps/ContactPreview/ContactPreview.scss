@@ -1,0 +1,11 @@
+.contactPreview {
+    border-bottom: solid 1px #ffffff;
+
+    .avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        object-fit: cover;
+        background-color: #fff;
+    }
+}

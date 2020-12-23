@@ -1,0 +1,41 @@
+.conact-details {
+    background-color: #051d38e0;
+    padding: 1rem;
+    margin: 0 auto;
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit,minmax(190px, 1fr));
+
+    .btns{
+        margin: 0.5rem 0;
+    }
+
+    .btn-label{
+        background: #005d92;
+        border-radius: 5px;
+        padding: 0 0.5em;
+        border: 1px solid #005d92;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover{
+            border: 1px solid #3affffe0;
+        }
+    }
+
+    .avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .table-flex{
+        >* >*{
+            width: unset;
+            min-width: fit-content;
+            margin: 0 auto;
+        }
+    }
+}

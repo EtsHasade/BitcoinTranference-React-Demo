@@ -1,0 +1,30 @@
+.app-header {
+    position           : sticky;
+    top                : 0;
+    width              : 100%;
+    z-index            : 1999;
+    background: #07101a;
+    box-shadow: 0 10px 50px #072435d8;
+    // background-color   : $clr1;
+    // background-image: linear-gradient(to right top, #ffc055, #eaa246, #d48639, #bd6a2d, #a55022);
+    // justify-content: flex-start;
+
+    .logo {
+        width:32px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        position       : relative;
+        margin: .5rem;
+    }
+
+
+    nav {
+        a {
+            margin: 0 1rem;
+            margin-left: 30px;
+        }
+    }
+
+}
+

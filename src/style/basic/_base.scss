@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    color          : #ffffff;
+    font-family    : 'Raleway';
+
+}
+
+body {
+    padding         : 0;
+    margin          : 0;
+    height          : 100%;
+    background-color: $clr1;
+}
+
+
+.App {
+    background-image   : url(../../assets/img/bitcoin-3227986_1920.jpg);
+    background-position: 0 0;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin         : 0 0 1em;
+    font-weight    : normal;
+    line-height    : 1.3;
+    text-decoration: none;
+    color          : inherit;
+}
+
+h1 {}
+
+h2 {
+    font-size  : 40px;
+    font-family: 'Raleway-bold';
+}
+
+a {
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color          : inherit;
+        text-decoration: none;
+    }
+}
+
+button {
+    width          : fit-content;
+    padding        : 0.5rem;
+    height         : 32px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    color          : inherit;
+    background     : #005d92;
+    border         : 1px solid #005d92;
+    border-radius  : 5px;
+    white-space: nowrap;
+
+
+
+    &:hover {
+        border: 1px solid #3affffe0;
+    }
+}
+
+button:focus,
+input:focus,
+select:focus {
+    outline: 0
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+
+
+.star {
+    color    : $clr1;
+    font-size: rem(16px) !important;
+    padding  : 0 !important;
+    margin   : 0 !important;
+}
+
+.fab {
+    font-size: rem(35px);
+    color    : #385898;
+    padding  : 10px;
+
+    &.fa-whatsapp {
+        color: #25d366;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+
+    &-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    &-thumb {
+        background: #888;
+    
+        &:hover {
+            background: #555;
+            
+        }
+    }
+}
+
+

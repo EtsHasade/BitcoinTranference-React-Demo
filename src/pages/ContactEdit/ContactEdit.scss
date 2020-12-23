@@ -1,0 +1,28 @@
+.contact-edit {
+    background-color: #051d38e0;
+    border-radius: 5px;
+
+    .avatar {
+        width: 34px;
+        height: 34px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 0 .5em;
+        background-color: #ffffff;
+        // padding: 2px;
+    }
+    
+    .btn-label{
+        background: #005d92;
+        border-radius: 5px;
+        padding: 0 0.5em;
+        border: 1px solid #005d92;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover{
+            border: 1px solid #3affffe0;
+        }
+    }
+}

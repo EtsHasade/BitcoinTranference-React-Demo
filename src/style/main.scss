@@ -1,0 +1,16 @@
+//--------- setup---------------
+@import './setup/typograpfy';
+@import './setup/var';
+@import './setup/function';
+@import './setup/mixin';
+@import './setup/animation';
+//--------- basic---------------
+@import './basic/helper';
+@import './basic/layout';
+@import './basic/base';
+//----------- cmps ------------
+@import './cmp/hero';
+@import './cmp/main-content';
+@import './cmp/services';
+
+
